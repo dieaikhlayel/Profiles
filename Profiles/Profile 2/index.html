@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diea's Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<div class="hero-header">
+    <div class="container">
+        <div class="toggle">
+            <i class="fa fa-sun"></i>
+        </div>
+
+        <div class="header-contact">
+            <div class="profile">
+                <img src="images/pic.jpg" alt="">
+            </div>
+            <div class="text-content">
+                <h1>I'M Diea Ikhlayel <br> <span>Information Security Engineer</span> </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <button class="button">
+                    <span class="text">Download CV</span>
+                    <span class="icon fa fa-arrow-right"></span>
+                </button>
+            </div>
+            <div class="navigation">
+                <div class="nav">
+                    <a href="#">
+                    <i  class="fa fa-home active"></i>
+                    </a>
+                      <a href="#">
+                    <i  class="fa fa-user"></i>
+                    </a>
+                      <a href="#">
+                    <i  class="fa fa-cog"></i>
+                    </a>
+                      <a href="#">
+                    <i  class="fa fa-comment"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    let btn=document.querySelector(".toggle");
+    let icon = document.querySelector(".toggle i");
+    let body = document.querySelector(".hero-header");
+
+
+    btn.onclick=function(){
+        body.classList.toggle("light-theme");
+        if (body.classList.contains("light-theme")) {
+            icon.classList.add("fa-moon");
+            icon.classList.remove("fa-sun");
+        }
+        else{
+            icon.classList.add("fa-sun");
+            icon.classList.remove("fa-moon");
+        }
+    }
+</script>
+ </body>
+</html>
